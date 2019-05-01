@@ -1,0 +1,7 @@
+<launch>
+  <rosparam command="load" file="$(find fusion2urdf)/launch/Moveo_robot_arm_controller.yaml"/>
+  <node args="Rev8_position_controller Rev12_position_controller Rev18_position_controller Rev7_position_controller Rev17_position_controller Rev9_position_controller Rev6_position_controller Rev10_position_controller joint_state_controller" name="controller_spawner" ns="Moveo_robot_arm" output="screen" pkg="controller_manager" respawn="false" type="spawner"/>
+  <node name="robot_state_publisher" output="screen" pkg="robot_state_publisher" respawn="false" type="robot_state_publisher">
+    <remap from="/joint_states" to="/Moveo_robot_arm/joint_states"/>
+  </node>
+</launch>

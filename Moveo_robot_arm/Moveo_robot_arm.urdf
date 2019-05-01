@@ -1,0 +1,340 @@
+<?xml version="1.0" ?>
+<robot name="Moveo_robot_arm">
+<link name="base_link">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.044849 -0.009706 0.261073"/>
+    <mass value="9.531525"/>
+    <inertia ixx="0.031051" ixy="-0.000581" ixz="0.135456" iyy="0.079848" iyz="-0.148511" izz="0.057861"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/Moveo_robot_arm/bin_stl/base_link_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/Moveo_robot_arm/bin_stl/base_link_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="JAW3__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.034622 0.03684800000000005 -0.014758999999999994"/>
+    <mass value="5.268176"/>
+    <inertia ixx="0.015833" ixy="6.8e-05" ixz="-0.554012" iyy="0.005458" iyz="0.554277" izz="0.015586"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.036687 -0.402755 -0.25517"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/Moveo_robot_arm/bin_stl/JAW3__1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.036687 -0.402755 -0.25517"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/Moveo_robot_arm/bin_stl/JAW3__1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="Gripper_Base__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.002064 -0.015723000000000042 -0.03528899999999999"/>
+    <mass value="0.576646"/>
+    <inertia ixx="0.000424" ixy="-3e-05" ixz="-0.052597" iyy="0.000457" iyz="0.052416" izz="0.000235"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.012194 -0.605816 -0.192186"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/Moveo_robot_arm/bin_stl/Gripper_Base__1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.012194 -0.605816 -0.192186"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/Moveo_robot_arm/bin_stl/Gripper_Base__1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="Gripper_Left__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.0001739999999999936 -0.01647399999999999 0.007738999999999996"/>
+    <mass value="0.261787"/>
+    <inertia ixx="0.000312" ixy="5.7e-05" ixz="-0.017516" iyy="0.000104" iyz="0.01748" izz="0.000247"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.032447 -0.574862 -0.118976"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/Moveo_robot_arm/bin_stl/Gripper_Left__1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.032447 -0.574862 -0.118976"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/Moveo_robot_arm/bin_stl/Gripper_Left__1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="JAW2__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.044592 0.07574299999999998 0.017651"/>
+    <mass value="13.996518"/>
+    <inertia ixx="0.122812" ixy="-0.000828" ixz="-0.869895" iyy="0.02649" iyz="0.868935" izz="0.126301"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.044585 -0.181644 -0.224036"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/Moveo_robot_arm/bin_stl/JAW2__1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.044585 -0.181644 -0.224036"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/Moveo_robot_arm/bin_stl/JAW2__1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="Gripper_Right__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.009632000000000002 0.017768000000000006 -0.014771999999999993"/>
+    <mass value="0.156339"/>
+    <inertia ixx="0.000123" ixy="1e-06" ixz="-0.009273" iyy="9.8e-05" iyz="0.009315" izz="3.1e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.04315 -0.576431 -0.120973"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/Moveo_robot_arm/bin_stl/Gripper_Right__1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.04315 -0.576431 -0.120973"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/Moveo_robot_arm/bin_stl/Gripper_Right__1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="JAW4__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.000178 0.05310599999999999 0.0003630000000000022"/>
+    <mass value="1.929729"/>
+    <inertia ixx="0.003753" ixy="-2.6e-05" ixz="-0.268757" iyy="0.002128" iyz="0.268694" izz="0.004322"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.001398 -0.530248 -0.239107"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/Moveo_robot_arm/bin_stl/JAW4__1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.001398 -0.530248 -0.239107"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/Moveo_robot_arm/bin_stl/JAW4__1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="JAW1__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.000191 0.08241699999999999 -0.0002479999999999982"/>
+    <mass value="12.599031"/>
+    <inertia ixx="0.072188" ixy="0.000104" ixz="-0.300303" iyy="0.049478" iyz="0.295995" izz="0.080715"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="7e-06 -0.016144 -0.2425"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/Moveo_robot_arm/bin_stl/JAW1__1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="7e-06 -0.016144 -0.2425"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/Moveo_robot_arm/bin_stl/JAW1__1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="JAW5__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.023701 -0.0011689999999999756 0.0024269999999999847"/>
+    <mass value="1.111192"/>
+    <inertia ixx="0.000915" ixy="1.5e-05" ixz="-0.162413" iyy="0.000756" iyz="0.162419" izz="0.000646"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.022478 -0.625282 -0.232135"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/Moveo_robot_arm/bin_stl/JAW5__1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.022478 -0.625282 -0.232135"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/Moveo_robot_arm/bin_stl/JAW5__1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<joint name="Rev8" type="revolute">
+  <origin rpy="0 0 0" xyz="0.081272 0.221111 0.031134"/>
+  <parent link="JAW2__1"/>
+  <child link="JAW3__1"/>
+  <axis xyz="-0.009239 -0.0 -0.003827"/>
+  <limit effort="100" lower="-1.919862" upper="1.919862" velocity="100"/>
+</joint>
+<transmission name="Rev8_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev8">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev8_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="Rev12" type="revolute">
+  <origin rpy="0 0 0" xyz="0.034672 -0.019466 -0.039949"/>
+  <parent link="JAW5__1"/>
+  <child link="Gripper_Base__1"/>
+  <axis xyz="0.002233 -0.00381 -0.008972"/>
+  <limit effort="100" lower="-3.141593" upper="3.141593" velocity="100"/>
+</joint>
+<transmission name="Rev12_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev12">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev12_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="Rev18" type="revolute">
+  <origin rpy="0 0 0" xyz="-0.010703 -0.001569 -0.001997"/>
+  <parent link="Gripper_Right__1"/>
+  <child link="Gripper_Left__1"/>
+  <axis xyz="0.00973 0.001426 0.001815"/>
+  <limit effort="100" lower="0.0" upper="0.610865" velocity="100"/>
+</joint>
+<transmission name="Rev18_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev18">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev18_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="Rev7" type="revolute">
+  <origin rpy="0 0 0" xyz="-0.044578 0.1655 -0.018464"/>
+  <parent link="JAW1__1"/>
+  <child link="JAW2__1"/>
+  <axis xyz="0.009239 0.0 0.003827"/>
+  <limit effort="100" lower="-1.832596" upper="1.832596" velocity="100"/>
+</joint>
+<transmission name="Rev7_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev7">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev7_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="Rev17" type="revolute">
+  <origin rpy="0 0 0" xyz="0.030956 -0.029385 -0.071213"/>
+  <parent link="Gripper_Base__1"/>
+  <child link="Gripper_Right__1"/>
+  <axis xyz="-0.00973 -0.001426 -0.001815"/>
+  <limit effort="100" lower="0.0" upper="0.698132" velocity="100"/>
+</joint>
+<transmission name="Rev17_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev17">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev17_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="Rev9" type="revolute">
+  <origin rpy="0 0 0" xyz="-0.035289 0.127493 -0.016063"/>
+  <parent link="JAW3__1"/>
+  <child link="JAW4__1"/>
+  <axis xyz="4e-05 0.009999 -9.7e-05"/>
+  <limit effort="100" lower="-3.141593" upper="3.141593" velocity="100"/>
+</joint>
+<transmission name="Rev9_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev9">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev9_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="Rev6" type="revolute">
+  <origin rpy="0 0 0" xyz="-7e-06 0.016144 0.2425"/>
+  <parent link="base_link"/>
+  <child link="JAW1__1"/>
+  <axis xyz="0.0 0.01 0.0"/>
+  <limit effort="100" lower="-1.570796" upper="1.570796" velocity="100"/>
+</joint>
+<transmission name="Rev6_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev6">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev6_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="Rev10" type="revolute">
+  <origin rpy="0 0 0" xyz="-0.023876 0.095034 -0.006972"/>
+  <parent link="JAW4__1"/>
+  <child link="JAW5__1"/>
+  <axis xyz="0.009703 -1.5e-05 0.002421"/>
+  <limit effort="100" lower="0.0" upper="3.534292" velocity="100"/>
+</joint>
+<transmission name="Rev10_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev10">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev10_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<gazebo>
+  <plugin filename="libgazebo_ros_control.so" name="control"/>
+</gazebo>
+</robot>
